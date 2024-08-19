@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoecoeco Life Store</title>
+    <meta name="description" content="Loja de produtos sustentáveis">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img class="logo" src="/assets/images/logo.png" alt="Logo Ecoeco">
+            <div class="menu--mobile">
+                <ul class="menu__mobile">
+                    <li class="container">
+                        <input type="checkbox" id="menu" class="container__button">
+                        <label for="menu">
+                            <span class="cabecalho__menu-burguer menu__item"></span>
+                        </label>
+                        <div class="caixa--toda">
+                            <div class="caixa--toda__content">
+                                <h2 class="lista-menu__titulo">DEPARTAMENTOS</h2>
+                                <div class="lista-menu__linhas">
+                                    <ul  class="lista-menu">
+                                        <li class="lista-menu__item">
+                                            <a href="#" class="lista-menu__link">Casa/Cozinha</a>
+                                        </li>
+                                        <li class="lista-menu__item">
+                                            <a href="#" class="lista-menu__link">Comida Orgânica</a>
+                                        </li>
+                                        <li class="lista-menu__item">
+                                            <a href="#" class="lista-menu__link">Cuidados Pessoais</a>
+                                        </li>
+                                        <li class="lista-menu__item">
+                                            <a href="#" class="lista-menu__link">PET Eco</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="lista-menu__linhas">
+                                    <ul  class="lista-menu">
+                                        <li class="lista-menu__item">
+                                            <a href="#" class="lista-menu__link">PET Food</a>
+                                        </li>
+                                        <li class="lista-menu__item">
+                                            <a href="#" class="lista-menu__link">Presentes</a>
+                                        </li>
+                                        <li class="lista-menu__item">
+                                            <a href="#" class="lista-menu__link">Reutilizáveis</a>
+                                        </li>
+                                        <li class="lista-menu__item">
+                                            <a href="#" class="lista-menu__link">PROMOÇÃO</a>
+                                        </li>
+                                    </ul>
+                                
+                                <a href="#" id="lista-menu__link">Ver todos</a> 
+                            </div>
+                        </div>    
+                    </li>
+                    <li class="menu__item">
+                        <a href="">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="">
+                            <i class="bi bi-bag"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="header__nav-principal">
+            <img class="logo" src="/assets/images/logo.png" alt="Logo Ecoeco">
+            <ul class="header__nav-principal__item">
+                <li class="menu__link">
+                    <a href="#" class="menu__link">COMPRAR</a>                                           
+                </li>
+                <li class="menu__link">
+                    <a href="#" class="menu__link">SOBRE</a>                                           
+                </li>
+                <li class="menu__link">
+                    <a href="#" class="menu__link">CONTATO</a>                                           
+                </li>                    
+                <li class="menu__item">
+                    <a href="">
+                        <i class="bi bi-person"></i>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="">
+                        <i class="bi bi-bag"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <video autoplay muted loop class="video-bg">
+                <source src="assets/videos/istockphoto-1473030998-640_adpp_is.mp4" type="video/mp4">
+            </video>
+            <div class="hero__content">
+                <h1 class="hero__text">
+                    FAÇA PARTE DA <b>MUDANÇA</b> - COMPRE COM PROPÓSITO
+                </h1>
+                <div class="hero__buttons">
+                    <div class="hero__btn">
+                        <a href="#comprar">
+                            <button class="btn--primary">
+                                <span> COMPRAR</span>
+                            </button>
+                        </a>
+                        <a href="#SOBRE">
+                            <button class="btn--primary" id="btn">
+                                <span> SOBRE</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <section class="categoria">
+            <div class="categoria__texto">
+                <h2 class="categoria__titulo">DEPARTAMENTOS</h2>
+                <div class="categoria__lista">
+                    <ul  class="lista-categoria">
+                        <li class="lista-categoria__item">
+                            <a href="#" class="lista-categoria__link">CASA/COZINHA</a>
+                        </li>
+                        <li class="lista-categoria__item">
+                            <a href="#" class="lista-categoria__link">COMIDA ORGÂNICA</a>
+                        </li>
+                        <li class="lista-categoria__item">
+                            <a href="#" class="lista-categoria__link">CUIDADOS PESSOAIS</a>
+                        </li>
+                        <li class="lista-categoria__item">
+                            <a href="#" class="lista-categoria__link">PET ECO</a>
+                        </li>
+                    </ul>
+                    <ul  class="lista-categoria">
+                        <li class="lista-categoria__item">
+                            <a href="#" class="lista-categoria__link">PET FOOD</a>
+                        </li>
+                        <li class="lista-categoria__item">
+                            <a href="#" class="lista-categoria__link">PRESENTES</a>
+                        </li>
+                        <li class="lista-categoria__item">
+                            <a href="#" class="lista-categoria__link">REUTILIZÁVEIS</a>
+                        </li>
+                        <li class="lista-categoria__item">
+                            <a href="#" ID="lista-categoria__link">PROMOÇÃO</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" ID="link__final">VER TODOS</a>
+            </div>
+            <div class="categoria__carrossel">
+                <section class="carrossel">
+                    <h2 class="carrossel__titulo">REUTILIZÁVEIS</h2>
+                    <div class="swiper">
+                        <div class="swiper-pagination"></div>
+                        
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/reutilizaveis.png" alt="Copos retrátil">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/reutilizaveis.png" alt="Copos retrátil">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR </span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                           
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/reutilizaveis.png" alt="Copos retrátil">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                        
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/reutilizaveis.png" alt="Copos retrátil">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                          
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/reutilizaveis.png" alt="Copos retrátil">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                           
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/reutilizaveis.png" alt="Copos retrátil">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                        
+            
+                        </div>
+                    </div>
+            
+                </section>
+                <section class="carrossel">
+                    <h2 class="carrossel__titulo">PET ECO</h2>
+                    <div class="swiper">
+                        <div class="swiper-pagination"></div>
+                        
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/pet-eco.png" alt="PET ECO">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/pet-eco.png" alt="PET ECO">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                           
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/pet-eco.png" alt="PET ECO">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                        
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/pet-eco.png" alt="PET ECO">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                          
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/pet-eco.png" alt="PET ECO">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                           
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/pet-eco.png" alt="PET ECO">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                        
+            
+                        </div>
+                    </div>
+            
+                </section>
+                <section class="carrossel">
+                    <h2 class="carrossel__titulo">CUIDADOS PESSOAIS</h2>
+                    <div class="swiper">
+                        <div class="swiper-pagination"></div>
+                        
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/cuidados-pessoais.png" alt="CUIDADOS PESSOAIS">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/cuidados-pessoais.png" alt="CUIDADOS PESSOAIS">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                           
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/cuidados-pessoais.png" alt="CUIDADOS PESSOAIS">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                        
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/cuidados-pessoais.png" alt="CUIDADOS PESSOAIS">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                          
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/cuidados-pessoais.png" alt="CUIDADOS PESSOAIS">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                           
+            
+                            <div class="swiper-slide">
+                                <div class="carrossel__content">
+                                    <img class="carrossel__content__img" src="/assets/images/cuidados-pessoais.png" alt="CUIDADOS PESSOAIS">
+                                    <p>Descrição do produto <br>especificação</p>
+                                    <h3 class="carrossel__content__h3">R$ 28,50</h3>
+                                    <p>3x R$12,50</p>
+                                    <div class="carrossel__btn">
+                                        <a href="#COMPRAR">
+                                            <button class="btn__carrossel">
+                                                <span> COMPRAR</span>
+                                            </button>
+                                         </a>
+
+                                       <i class="bi bi-eye-fill"></i>
+
+                                    </div>
+                                </div>
+                            </div>                        
+            
+                        </div>
+                    </div>
+            
+                </section>  
+            </div>
+        </section>
+        <section class="blog">
+            <div class="blog__titulo">
+                <h2 class="blog__h2">InspiraAção Verde</h2>
+                <h2 class="blog__sub">O blog para inspirar(te)</h2>
+            </div>
+            <article  class="blog__post">
+                <div class="blog__img-container">
+                    <img class="blog__post-img" src="assets/images/blog__coletor.jpg" alt="">
+                </div>
+                <div class="blog__post__texto">
+                    <h2 class="blog__post__titulo">Menstruação Sustentável: Escolha Amiga do Planeta!</h2>
+                    <p class="blog__post__p">Descubra como os utensílios menstruais sustentáveis não só promovem o bem-estar feminino, mas também ajudam a preservar o planeta. Diga adeus aos produtos descartáveis e faça parte do movimento por uma menstruação mais saudável e eco-friendly! 🌱 
+                    </p>
+                    <button class="blog__post__btn">
+                        <span>SAIBA MAIS!</span>
+                    </button>
+                </div>
+
+            </article>
+            <article  class="blog__post">
+                <div class="blog__img-container">
+                    <img class="blog__post-img-cama" src="assets/images/blog__cama.png" alt="">
+                </div>
+                <div class="blog__post__texto">
+                    <h2 class="blog__post__titulo">Por Trás das Camas Ecológicas para Pets</h2>
+                    <p class="blog__post__p">Saiba como as camas ecológicas para pets oferecem conforto sem prejudicar o planeta! Conheça os segredos por trás desses produtos inovadores e faça uma escolha sustentável para o seu melhor amigo de quatro patas. Leve o conforto do seu pet para o próximo nível enquanto cuida do meio ambiente. Clique para descobrir mais!
+                    </p>
+                    <button class="blog__post__btn">
+                        <span>SAIBA MAIS!</span>
+                    </button>
+                </div>
+
+            </article>
+            <article  class="blog__post">
+                <div class="blog__img-container">
+                    <img class="blog__post-img-canudo" src="assets/images/blog__canudo.png" alt="">
+                </div>
+                <div class="blog__post__texto">
+                    <h2 class="blog__post__titulo">Por que os Canudos de Inox são uma Escolha Inteligente</h2>
+                    <p class="blog__post__p">Descubra por que os canudos de inox estão substituindo os canudos de plástico em todo lugar! Além de serem duráveis e elegantes, os canudos de inox são uma opção ambientalmente amigável. Eles são reutilizáveis, fáceis de limpar e ajudam a reduzir o desperdício de plástico que polui nossos oceanos e prejudica a vida marinha. 
+                    </p>
+                    <button class="blog__post__btn">
+                        <span>SAIBA MAIS!</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="rodape__logo">
+            <img class="rodape__logo" src="/assets/images/logo.png" alt="Logo Eco">
+        </div>
+        <div class="rodape__nav">
+            <div class="rodape__nav__links">
+                <div  class="rodape__nav__sections">
+                    <a href="#">COMPRAR</a>
+                    <a href="#">SOBRE</a>
+                    <a href="#">CONTATO</a>
+                </div>
+                <div  class="rodape__nav__sections">
+                    <a href="#">TERMOS</a>
+                    <a href="#">POLITICA DE TROCA</a>
+                    <a href="#">POLITICA DE REEMBOLSO</a>
+                </div>
+                <div  class="rodape__nav__sections">
+                    <a href="#">FACEBOOK</a>
+                    <a href="#">INSTAGRAM</a>
+                    <a href="#">INSPIRAÇÃO VERDE</a>
+                </div>
+
+            </div>
+            <p class="rodape__p">©2024 Todos Os Direitos Reservados. DEBORAH NOVAES. <br> DESENVOLVIDO POR DEBORAH NOVAES</p>
+
+        </div>
+    </footer>
+   
+</body>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+
+</html>

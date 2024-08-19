@@ -1,0 +1,16 @@
+.carrossel__titulo{
+    color: black;
+    background-color: blue;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 1.125rem;
+}
+
+.swiper-slide{
+    width: 100%;
+}
+
+.swiper-pagination{
+    position: initial;
+}
